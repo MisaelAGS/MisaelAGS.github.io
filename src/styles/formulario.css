@@ -1,0 +1,114 @@
+#Formulario {
+  position: relative;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  height: auto;
+  /* box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.212); */
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4px;
+  border: 2px solid #e9a209;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: auto;
+}
+
+.form-image img {
+  height: 700px;
+}
+
+.question {
+  color: #e9a209;
+  font-weight: bold;
+}
+
+#title-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e9a209;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.3rem;
+  /* flex-direction: column; */
+}
+
+.input-text {
+  background-color: transparent;
+  margin: 0.6rem 0;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.212);
+}
+
+.confirm-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.box-text {
+  flex-direction: column;
+}
+
+.box-text textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+  }
+
+  .input {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .form-image img {
+    height: auto;
+    width: 100%;
+  }
+}
